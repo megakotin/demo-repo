@@ -1,0 +1,4 @@
+Install-Module ExchangeOnlineManagement
+PS C:\Windows\system32> Get-DistributionGroupMember -Identity "Allstaffhk" |
+>> Select Name, PrimarySmtpAddress |
+>> Export-Csv -Path "C:\Temp\DL_Members.csv" -NoTypeInformation
